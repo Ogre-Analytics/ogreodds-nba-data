@@ -1,8 +1,10 @@
 # Secrets — never commit
 .env
 
-# Data cache (fetched fresh on each run)
-data/cache/
+# Cache files ARE committed so GitHub Actions can use them without
+# calling stats.nba.com (which blocks CI/CD IP ranges).
+# Only exclude the injury cache — it's too volatile to commit.
+data/cache/injuries_espn.json
 
 # Python
 __pycache__/

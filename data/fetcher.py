@@ -34,6 +34,12 @@ NBA_TIMEOUT   = 60
 # Number of times to retry a failed NBA API call before giving up.
 NBA_RETRIES   = 3
 
+# stats.nba.com blocks GitHub Actions IP ranges entirely.
+# When running in CI, accept cached data up to 7 days old so committed
+# cache files are always used instead of making blocked API calls.
+_IN_CI = os.getenv("GITHUB_ACTIONS") == "true"
+_CI_CACHE_TTL_HOURS = 168   # 7 days
+
 
 def _nba_call(fn, *args, **kwargs):
     """
@@ -66,8 +72,11 @@ def _load_cache(key: str, max_age_hours: float = 6) -> dict | None:
     path = _cache_path(key)
     if not path.exists():
         return None
+    # In GitHub Actions, stats.nba.com is blocked — honour committed cache files
+    # regardless of age so the pipeline never needs to call stats.nba.com.
+    effective_ttl = _CI_CACHE_TTL_HOURS if _IN_CI else max_age_hours
     age_hours = (time.time() - path.stat().st_mtime) / 3600
-    if age_hours > max_age_hours:
+    if age_hours > effective_ttl:
         return None
     with open(path) as f:
         return json.load(f)
@@ -174,6 +183,60 @@ def _result_set_to_df(result_sets: list, name: str) -> pd.DataFrame:
     return pd.DataFrame()
 
 
+def _cdn_scoreboard(game_date: str) -> dict:
+    """
+    Build a scoreboard dict from the NBA CDN schedule JSON.
+    Used as a fallback when stats.nba.com is unreachable (e.g. GitHub Actions).
+    cdn.nba.com is public and never blocks CI/CD IP ranges.
+    """
+    import requests as _req
+    try:
+        resp = _req.get(
+            "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
+            timeout=15,
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        resp.raise_for_status()
+        game_dates = resp.json().get("leagueSchedule", {}).get("gameDates", [])
+    except Exception as exc:
+        print(f"  [cdn]   CDN scoreboard failed: {exc}")
+        return {"game_header": pd.DataFrame(), "line_score": pd.DataFrame(),
+                "series_standings": pd.DataFrame()}
+
+    rows = []
+    for gd in game_dates:
+        try:
+            gd_str = datetime.strptime(
+                gd.get("gameDate", ""), "%m/%d/%Y %H:%M:%S"
+            ).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+        if gd_str != game_date:
+            continue
+        for game in gd.get("games", []):
+            home_id = game.get("homeTeam", {}).get("teamId")
+            away_id = game.get("awayTeam", {}).get("teamId")
+            if not home_id or not away_id:
+                continue
+            status_id   = int(game.get("gameStatus", 1))
+            status_text = "Final" if status_id == 3 else str(game.get("gameStatusText", "")).strip()
+            rows.append({
+                "GAME_ID":          game.get("gameId", ""),
+                "HOME_TEAM_ID":     int(home_id),
+                "VISITOR_TEAM_ID":  int(away_id),
+                "GAME_STATUS_TEXT": status_text,
+                "GAME_STATUS_ID":   status_id,
+            })
+
+    header_df = pd.DataFrame(rows) if rows else pd.DataFrame(
+        columns=["GAME_ID", "HOME_TEAM_ID", "VISITOR_TEAM_ID", "GAME_STATUS_TEXT", "GAME_STATUS_ID"]
+    )
+    if rows:
+        print(f"  [cdn]   CDN scoreboard: {len(rows)} game(s) for {game_date}")
+    return {"game_header": header_df, "line_score": pd.DataFrame(),
+            "series_standings": pd.DataFrame()}
+
+
 def get_todays_scoreboard(game_date: str | None = None) -> dict:
     """
     Fetch games for the given date using ScoreboardV2.
@@ -186,21 +249,27 @@ def get_todays_scoreboard(game_date: str | None = None) -> dict:
     """
     if game_date:
         from datetime import datetime as _dt
-        query_date = _dt.strptime(game_date, "%Y-%m-%d").strftime("%m/%d/%Y")
+        query_date_fmt = _dt.strptime(game_date, "%Y-%m-%d").strftime("%m/%d/%Y")
     else:
-        query_date = date.today().strftime("%m/%d/%Y")
-    print(f"  [api]   Fetching scoreboard for {query_date} ...")
-    time.sleep(REQUEST_DELAY)
-    board = _nba_call(lambda: scoreboardv2.ScoreboardV2(
-        game_date=query_date, league_id="00", day_offset=0, timeout=NBA_TIMEOUT,
-    ))
-    raw = board.get_dict()
-    result_sets = raw.get("resultSets", [])
-    return {
-        "game_header": _result_set_to_df(result_sets, "GameHeader"),
-        "line_score": _result_set_to_df(result_sets, "LineScore"),
-        "series_standings": _result_set_to_df(result_sets, "SeriesStandings"),
-    }
+        game_date      = date.today().strftime("%Y-%m-%d")
+        query_date_fmt = date.today().strftime("%m/%d/%Y")
+
+    print(f"  [api]   Fetching scoreboard for {query_date_fmt} ...")
+    try:
+        time.sleep(REQUEST_DELAY)
+        board = _nba_call(lambda: scoreboardv2.ScoreboardV2(
+            game_date=query_date_fmt, league_id="00", day_offset=0, timeout=NBA_TIMEOUT,
+        ))
+        raw = board.get_dict()
+        result_sets = raw.get("resultSets", [])
+        return {
+            "game_header": _result_set_to_df(result_sets, "GameHeader"),
+            "line_score":  _result_set_to_df(result_sets, "LineScore"),
+            "series_standings": _result_set_to_df(result_sets, "SeriesStandings"),
+        }
+    except Exception as exc:
+        print(f"  [warn]  ScoreboardV2 failed ({type(exc).__name__}), using CDN fallback ...")
+        return _cdn_scoreboard(game_date)
 
 
 def get_player_stats(season: str = CURRENT_SEASON, use_cache: bool = True) -> pd.DataFrame:
