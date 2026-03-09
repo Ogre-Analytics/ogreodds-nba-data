@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T22:11:33Z",
+  "generated_at": "2026-03-09T22:50:48Z",
   "error": "HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60)",
   "games": []
 }
