@@ -1,0 +1,52 @@
+name: NBA Predictions (every 15 min)
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes, all day
+  workflow_dispatch:           # manual trigger from GitHub Actions tab
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Get ISO week number
+        id: week
+        run: echo "num=$(date +%Y-W%V)" >> $GITHUB_OUTPUT
+
+      - name: Restore model cache
+        uses: actions/cache@v4
+        with:
+          path: model/nba_model.pkl
+          key: nba-model-${{ steps.week.outputs.num }}
+
+      - name: Generate predictions
+        run: python predict.py --out predictions.json
+
+      - name: Commit and push predictions.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add predictions.json
+          git diff --staged --quiet && echo "No changes to commit" || \
+            git commit -m "predictions: $(date -u +%Y-%m-%dT%H:%M:%SZ)" && git push

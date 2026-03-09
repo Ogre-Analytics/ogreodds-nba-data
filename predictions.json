@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-03-09T20:43:19Z",
+  "game_date": "2026-03-09",
+  "games": [
+    {
+      "home_team": "Cleveland Cavaliers",
+      "away_team": "Philadelphia 76ers",
+      "home_abbrev": "CLE",
+      "away_abbrev": "PHI",
+      "home_win_pct": 84,
+      "away_win_pct": 16,
+      "tip_time_et": "7:00 pm ET",
+      "tip_time_aedt": "10:00 am AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
+      "home_team": "Brooklyn Nets",
+      "away_team": "Memphis Grizzlies",
+      "home_abbrev": "BKN",
+      "away_abbrev": "MEM",
+      "home_win_pct": 39,
+      "away_win_pct": 61,
+      "tip_time_et": "7:30 pm ET",
+      "tip_time_aedt": "10:30 am AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
+      "home_team": "Oklahoma City Thunder",
+      "away_team": "Denver Nuggets",
+      "home_abbrev": "OKC",
+      "away_abbrev": "DEN",
+      "home_win_pct": 66,
+      "away_win_pct": 34,
+      "tip_time_et": "7:30 pm ET",
+      "tip_time_aedt": "10:30 am AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
+      "home_team": "Utah Jazz",
+      "away_team": "Golden State Warriors",
+      "home_abbrev": "UTA",
+      "away_abbrev": "GSW",
+      "home_win_pct": 47,
+      "away_win_pct": 53,
+      "tip_time_et": "9:00 pm ET",
+      "tip_time_aedt": "12:00 pm AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
+      "home_team": "Los Angeles Clippers",
+      "away_team": "New York Knicks",
+      "home_abbrev": "LAC",
+      "away_abbrev": "NYK",
+      "home_win_pct": 46,
+      "away_win_pct": 54,
+      "tip_time_et": "10:00 pm ET",
+      "tip_time_aedt": "1:00 pm AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    }
+  ]
+}

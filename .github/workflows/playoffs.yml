@@ -1,0 +1,53 @@
+name: NBA Playoffs (daily)
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 3am UTC = 1pm AEDT — after all games finish
+  workflow_dispatch:        # manual trigger from GitHub Actions tab
+
+jobs:
+  playoffs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Get ISO week number
+        id: week
+        run: echo "num=$(date +%Y-W%V)" >> $GITHUB_OUTPUT
+
+      - name: Restore model cache
+        uses: actions/cache@v4
+        with:
+          path: model/nba_model.pkl
+          key: nba-model-${{ steps.week.outputs.num }}
+
+      - name: Run playoff simulator
+        # 3000 sims keeps runtime under 3 minutes on GitHub Actions
+        run: python playoffs.py --sims 3000 --out playoffs.json
+
+      - name: Commit and push playoffs.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add playoffs.json
+          git diff --staged --quiet && echo "No changes to commit" || \
+            git commit -m "playoffs: $(date -u +%Y-%m-%d)" && git push
