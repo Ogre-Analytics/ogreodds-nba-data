@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-10T12:54:21Z",
+  "generated_at": "2026-03-10T14:00:17Z",
   "game_date": "2026-03-10",
   "games": [
     {
@@ -7,8 +7,8 @@
       "away_team": "Memphis Grizzlies",
       "home_abbrev": "PHI",
       "away_abbrev": "MEM",
-      "home_win_pct": 64,
-      "away_win_pct": 36,
+      "home_win_pct": 58,
+      "away_win_pct": 42,
       "tip_time_et": "7:00 pm ET",
       "tip_time_aedt": "10:00 am AEDT",
       "game_status": "scheduled",
@@ -19,8 +19,8 @@
       "away_team": "Detroit Pistons",
       "home_abbrev": "BKN",
       "away_abbrev": "DET",
-      "home_win_pct": 11,
-      "away_win_pct": 89,
+      "home_win_pct": 15,
+      "away_win_pct": 85,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
