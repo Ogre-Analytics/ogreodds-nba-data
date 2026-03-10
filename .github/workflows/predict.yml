@@ -40,6 +40,13 @@ jobs:
           path: model/nba_model.pkl
           key: nba-model-${{ steps.week.outputs.num }}
 
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: nba-data-${{ steps.week.outputs.num }}
+          restore-keys: nba-data-
+
       - name: Generate predictions
         run: python predict.py --out predictions.json
 

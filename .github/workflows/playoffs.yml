@@ -40,9 +40,22 @@ jobs:
           path: model/nba_model.pkl
           key: nba-model-${{ steps.week.outputs.num }}
 
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: nba-data-${{ steps.week.outputs.num }}
+          restore-keys: nba-data-
+
       - name: Run playoff simulator
         # 3000 sims keeps runtime under 3 minutes on GitHub Actions
         run: python playoffs.py --sims 3000 --out playoffs.json
+
+      - name: Save data cache
+        uses: actions/cache/save@v4
+        with:
+          path: data/cache
+          key: nba-data-${{ steps.week.outputs.num }}
 
       - name: Commit and push playoffs.json
         run: |
