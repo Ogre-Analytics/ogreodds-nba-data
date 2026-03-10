@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-10T21:37:17Z",
+  "generated_at": "2026-03-10T21:57:34Z",
   "game_date": "2026-03-10",
   "games": [
     {
@@ -48,7 +48,7 @@
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     },
     {
       "home_team": "Houston Rockets",
