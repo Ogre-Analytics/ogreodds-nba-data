@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ogre Odds — NBA Predictions</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0e0e0f;
+      --surface:   #18181b;
+      --border:    #2a2a2e;
+      --accent:    #f97316;
+      --accent2:   #fb923c;
+      --text:      #e4e4e7;
+      --muted:     #71717a;
+      --win-hi:    #22c55e;
+      --win-lo:    #ef4444;
+      --radius:    10px;
+      --font:      'Inter', 'Segoe UI', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Layout ────────────────────────────────────────────────────── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    /* ── Header ────────────────────────────────────────────────────── */
+    header {
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    /* ── Section headers ───────────────────────────────────────────── */
+    .section { margin-bottom: 48px; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.3px;
+    }
+
+    .section-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── Cards ─────────────────────────────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    /* ── Game grid ─────────────────────────────────────────────────── */
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 12px;
+    }
+
+    .game-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      transition: border-color 0.15s;
+    }
+
+    .game-card:hover { border-color: var(--accent); }
+
+    .game-time {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .status-badge {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .status-scheduled { background: #1d2a1d; color: #4ade80; }
+    .status-live       { background: #2d1a0e; color: var(--accent); animation: pulse 1.5s infinite; }
+    .status-final      { background: #1a1a2e; color: #818cf8; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.5; }
+    }
+
+    .matchup {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .team-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .team-abbrev {
+      width: 36px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .team-name {
+      flex: 1;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .win-pct-label {
+      font-size: 13px;
+      font-weight: 700;
+      width: 38px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .bar-wrap {
+      margin-top: 10px;
+      height: 5px;
+      border-radius: 3px;
+      background: var(--border);
+      overflow: hidden;
+      display: flex;
+    }
+
+    .bar-home {
+      height: 100%;
+      background: var(--win-hi);
+      border-radius: 3px 0 0 3px;
+      transition: width 0.6s ease;
+    }
+
+    .bar-away {
+      height: 100%;
+      background: var(--win-lo);
+      border-radius: 0 3px 3px 0;
+      transition: width 0.6s ease;
+    }
+
+    .injury-tag {
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ── Playoffs table ────────────────────────────────────────────── */
+    .conf-label {
+      padding: 10px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      padding: 10px 14px;
+      text-align: right;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    thead th:first-child,
+    thead th:nth-child(2) { text-align: left; }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.1s;
+    }
+
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(255,255,255,0.03); }
+
+    tbody td {
+      padding: 10px 14px;
+      text-align: right;
+      font-size: 13px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    tbody td:first-child { text-align: left; }
+    tbody td:nth-child(2) {
+      text-align: left;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .team-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .seed-num {
+      width: 18px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .team-full { font-weight: 500; }
+
+    .pct-cell { font-variant-numeric: tabular-nums; }
+
+    .champ-col {
+      font-weight: 700;
+      color: var(--accent2);
+    }
+
+    .playin-divider td {
+      padding: 6px 14px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      background: var(--bg);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eliminated td { opacity: 0.4; }
+
+    /* ── Footer ────────────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    /* ── Loading / error states ─────────────────────────────────────── */
+    .state-box {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .spinner {
+      width: 28px;
+      height: 28px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 0 auto 12px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error-icon { font-size: 24px; margin-bottom: 8px; }
+
+    /* ── Responsive ─────────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      h1 { font-size: 22px; }
+      .games-grid { grid-template-columns: 1fr; }
+
+      thead th:nth-child(n+5) { display: none; }
+      tbody td:nth-child(n+5) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ── Header ──────────────────────────────────────────────────── -->
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🏀</div>
+      <h1>Ogre <span>Odds</span></h1>
+    </div>
+    <p class="tagline">NBA game predictions &amp; playoff odds — model-driven, updated automatically</p>
+  </header>
+
+  <!-- ── Today's Games ────────────────────────────────────────────── -->
+  <section class="section" id="predictions-section">
+    <div class="section-header">
+      <h2>Today's Game Predictions</h2>
+      <span class="section-meta" id="predictions-meta">Loading…</span>
+    </div>
+    <div id="predictions-container">
+      <div class="state-box"><div class="spinner"></div>Fetching predictions…</div>
+    </div>
+  </section>
+
+  <!-- ── Playoff Odds ─────────────────────────────────────────────── -->
+  <section class="section" id="playoffs-section">
+    <div class="section-header">
+      <h2>NBA Playoff Odds</h2>
+      <span class="section-meta" id="playoffs-meta">Loading…</span>
+    </div>
+    <div id="playoffs-container">
+      <div class="state-box"><div class="spinner"></div>Fetching playoff odds…</div>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────────────── -->
+  <footer>
+    <span>© 2026 Ogre Odds — for entertainment purposes only</span>
+    <span>Predictions refresh every 15 min &nbsp;·&nbsp; Playoff odds update daily</span>
+  </footer>
+
+</div>
+
+<script>
+  // ── Config ─────────────────────────────────────────────────────────
+  // Update GITHUB_PAGES_BASE to your actual GitHub Pages URL once enabled.
+  // It follows the pattern: https://<org>.github.io/<repo-name>
+  const GITHUB_PAGES_BASE = "https://ogre-analytics.github.io/ogreodds-nba-data";
+  const PREDICTIONS_URL   = `${GITHUB_PAGES_BASE}/predictions.json`;
+  const PLAYOFFS_URL      = `${GITHUB_PAGES_BASE}/playoffs.json`;
+
+  // ── Helpers ────────────────────────────────────────────────────────
+  function fmtPct(v) {
+    if (v === null || v === undefined) return "—";
+    if (v < 0.2) return `<span style="color:var(--muted)">${v.toFixed(1)}%</span>`;
+    if (v >= 99)  return `<span style="color:var(--accent2)">99%+</span>`;
+    return `${v.toFixed(1)}%`;
+  }
+
+  function fmtAge(isoStr) {
+    const diff = Math.round((Date.now() - new Date(isoStr)) / 60000);
+    if (diff < 2)  return "just now";
+    if (diff < 60) return `${diff}m ago`;
+    const h = Math.floor(diff / 60);
+    return `${h}h ${diff % 60}m ago`;
+  }
+
+  function statusBadge(status) {
+    const map = {
+      scheduled: ["status-scheduled", "Scheduled"],
+      live:      ["status-live",      "● Live"],
+      final:     ["status-final",     "Final"],
+    };
+    const [cls, label] = map[status] || ["status-scheduled", status];
+    return `<span class="status-badge ${cls}">${label}</span>`;
+  }
+
+  // ── Render: Game predictions ───────────────────────────────────────
+  function renderPredictions(data) {
+    const meta = document.getElementById("predictions-meta");
+    meta.textContent = `${data.game_date} · updated ${fmtAge(data.generated_at)}`;
+
+    const container = document.getElementById("predictions-container");
+
+    if (!data.games || data.games.length === 0) {
+      container.innerHTML = `<div class="state-box"><div class="error-icon">🏖️</div>No games scheduled today.</div>`;
+      return;
+    }
+
+    const cards = data.games.map(g => {
+      const homeHi = g.home_win_pct > g.away_win_pct;
+      const homeColor = homeHi ? "var(--win-hi)" : "var(--win-lo)";
+      const awayColor = homeHi ? "var(--win-lo)" : "var(--win-hi)";
+
+      return `
+        <div class="game-card">
+          <div class="game-time">
+            <span>${g.tip_time_aedt} &nbsp;/&nbsp; ${g.tip_time_et}</span>
+            ${statusBadge(g.game_status)}
+          </div>
+          <div class="matchup">
+            <div class="team-row">
+              <span class="team-abbrev">${g.home_abbrev}</span>
+              <span class="team-name">${g.home_team}</span>
+              <span class="win-pct-label" style="color:${homeColor}">${g.home_win_pct}%</span>
+            </div>
+            <div class="team-row">
+              <span class="team-abbrev">${g.away_abbrev}</span>
+              <span class="team-name">${g.away_team}</span>
+              <span class="win-pct-label" style="color:${awayColor}">${g.away_win_pct}%</span>
+            </div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-home" style="width:${g.home_win_pct}%"></div>
+            <div class="bar-away" style="width:${g.away_win_pct}%"></div>
+          </div>
+          ${g.injury_adjusted ? `<div class="injury-tag"><span class="dot"></span> Injury adjusted</div>` : ""}
+        </div>`;
+    }).join("");
+
+    container.innerHTML = `<div class="games-grid">${cards}</div>`;
+  }
+
+  // ── Render: Playoff odds ───────────────────────────────────────────
+  function renderPlayoffs(data) {
+    const meta = document.getElementById("playoffs-meta");
+    meta.textContent = `${data.season} · ${data.simulations.toLocaleString()} sims · updated ${fmtAge(data.generated_at)}`;
+
+    const container = document.getElementById("playoffs-container");
+
+    const east  = data.teams.filter(t => t.conference === "East").sort((a, b) => a.seed - b.seed);
+    const west  = data.teams.filter(t => t.conference === "West").sort((a, b) => a.seed - b.seed);
+
+    function confTable(teams, confName) {
+      const rows = teams.map((t, i) => {
+        const playin = t.seed >= 7 && t.seed <= 10;
+        const elim   = t.playoffs_pct < 0.5;
+        const divider = t.seed === 7
+          ? `<tr class="playin-divider"><td colspan="9">Play-In Tournament</td></tr>`
+          : t.seed === 11
+          ? `<tr class="playin-divider"><td colspan="9">Lottery</td></tr>`
+          : "";
+
+        return `${divider}
+          <tr class="${elim ? "eliminated" : ""}">
+            <td>
+              <div class="team-cell">
+                <span class="seed-num">${t.seed}</span>
+                <span class="team-full">${t.full_name}</span>
+              </div>
+            </td>
+            <td>${t.wins}–${t.losses}</td>
+            <td class="pct-cell">${fmtPct(t.playoffs_pct)}</td>
+            <td class="pct-cell">${fmtPct(t.win_r1_pct)}</td>
+            <td class="pct-cell">${fmtPct(t.win_r2_pct)}</td>
+            <td class="pct-cell">${fmtPct(t.finals_pct)}</td>
+            <td class="pct-cell champ-col">${fmtPct(t.champ_pct)}</td>
+          </tr>`;
+      }).join("");
+
+      return `
+        <div class="conf-label">${confName} Conference</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>W–L</th>
+              <th>Playoffs</th>
+              <th>Win R1</th>
+              <th>Win R2</th>
+              <th>Finals</th>
+              <th>Champ</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+    }
+
+    container.innerHTML = `
+      <div class="card">
+        ${confTable(east, "Eastern")}
+        ${confTable(west, "Western")}
+      </div>`;
+  }
+
+  // ── Fetch with error handling ──────────────────────────────────────
+  async function loadSection(url, renderFn, errorContainerId, metaId, label) {
+    try {
+      const res = await fetch(`${url}?t=${Date.now()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      renderFn(data);
+    } catch (err) {
+      document.getElementById(errorContainerId).innerHTML = `
+        <div class="state-box">
+          <div class="error-icon">⚠️</div>
+          Could not load ${label}.<br>
+          <span style="font-size:11px;color:var(--muted);">${err.message}</span>
+        </div>`;
+      document.getElementById(metaId).textContent = "unavailable";
+    }
+  }
+
+  // ── Init ───────────────────────────────────────────────────────────
+  loadSection(PREDICTIONS_URL, renderPredictions, "predictions-container", "predictions-meta", "today's games");
+  loadSection(PLAYOFFS_URL,    renderPlayoffs,    "playoffs-container",    "playoffs-meta",    "playoff odds");
+
+  // Auto-refresh predictions every 5 minutes
+  setInterval(() => {
+    loadSection(PREDICTIONS_URL, renderPredictions, "predictions-container", "predictions-meta", "today's games");
+  }, 5 * 60 * 1000);
+</script>
+
+</body>
+</html>
