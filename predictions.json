@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T23:20:28Z",
+  "generated_at": "2026-03-10T04:06:59Z",
   "game_date": "2026-03-09",
   "games": [
     {
@@ -7,11 +7,11 @@
       "away_team": "Philadelphia 76ers",
       "home_abbrev": "CLE",
       "away_abbrev": "PHI",
-      "home_win_pct": 83,
-      "away_win_pct": 17,
-      "tip_time_et": "7:00 pm ET",
-      "tip_time_aedt": "10:00 am AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 86,
+      "away_win_pct": 14,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -19,11 +19,11 @@
       "away_team": "Memphis Grizzlies",
       "home_abbrev": "BKN",
       "away_abbrev": "MEM",
-      "home_win_pct": 56,
-      "away_win_pct": 44,
-      "tip_time_et": "7:30 pm ET",
-      "tip_time_aedt": "10:30 am AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 42,
+      "away_win_pct": 58,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -31,11 +31,11 @@
       "away_team": "Denver Nuggets",
       "home_abbrev": "OKC",
       "away_abbrev": "DEN",
-      "home_win_pct": 55,
-      "away_win_pct": 45,
-      "tip_time_et": "7:30 pm ET",
-      "tip_time_aedt": "10:30 am AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 64,
+      "away_win_pct": 36,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -43,11 +43,11 @@
       "away_team": "Golden State Warriors",
       "home_abbrev": "UTA",
       "away_abbrev": "GSW",
-      "home_win_pct": 44,
-      "away_win_pct": 56,
-      "tip_time_et": "9:00 pm ET",
-      "tip_time_aedt": "12:00 pm AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 47,
+      "away_win_pct": 53,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -55,11 +55,11 @@
       "away_team": "New York Knicks",
       "home_abbrev": "LAC",
       "away_abbrev": "NYK",
-      "home_win_pct": 35,
-      "away_win_pct": 65,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 36,
+      "away_win_pct": 64,
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     }
   ]
