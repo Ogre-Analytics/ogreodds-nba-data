@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-10T16:14:08Z",
+  "generated_at": "2026-03-10T17:09:23Z",
   "game_date": "2026-03-10",
   "games": [
     {
@@ -31,8 +31,8 @@
       "away_team": "Washington Wizards",
       "home_abbrev": "MIA",
       "away_abbrev": "WAS",
-      "home_win_pct": 90,
-      "away_win_pct": 10,
+      "home_win_pct": 92,
+      "away_win_pct": 8,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
