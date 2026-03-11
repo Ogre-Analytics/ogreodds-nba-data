@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T18:03:17Z",
+  "generated_at": "2026-03-11T19:10:19Z",
   "game_date": "2026-03-11",
   "games": [
     {
@@ -43,8 +43,8 @@
       "away_team": "Houston Rockets",
       "home_abbrev": "DEN",
       "away_abbrev": "HOU",
-      "home_win_pct": 62,
-      "away_win_pct": 38,
+      "home_win_pct": 63,
+      "away_win_pct": 37,
       "tip_time_et": "10:00 pm ET",
       "tip_time_aedt": "1:00 pm AEDT",
       "game_status": "scheduled",
