@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T23:22:36Z",
+  "generated_at": "2026-03-11T23:49:00Z",
   "game_date": "2026-03-11",
   "games": [
     {
@@ -9,9 +9,9 @@
       "away_abbrev": "CLE",
       "home_win_pct": 39,
       "away_win_pct": 61,
-      "tip_time_et": "7:30 pm ET",
-      "tip_time_aedt": "10:30 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "1st Qtr",
+      "tip_time_aedt": "1st Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
