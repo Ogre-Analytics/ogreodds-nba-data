@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T12:53:50Z",
+  "generated_at": "2026-03-11T14:04:41Z",
   "game_date": "2026-03-11",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "Toronto Raptors",
       "home_abbrev": "NOP",
       "away_abbrev": "TOR",
-      "home_win_pct": 56,
-      "away_win_pct": 44,
+      "home_win_pct": 51,
+      "away_win_pct": 49,
       "tip_time_et": "8:00 pm ET",
       "tip_time_aedt": "11:00 am AEDT",
       "game_status": "scheduled",
@@ -55,8 +55,8 @@
       "away_team": "Charlotte Hornets",
       "home_abbrev": "SAC",
       "away_abbrev": "CHA",
-      "home_win_pct": 15,
-      "away_win_pct": 85,
+      "home_win_pct": 12,
+      "away_win_pct": 88,
       "tip_time_et": "10:00 pm ET",
       "tip_time_aedt": "1:00 pm AEDT",
       "game_status": "scheduled",
