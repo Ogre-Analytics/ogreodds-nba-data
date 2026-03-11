@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T02:06:12Z",
+  "generated_at": "2026-03-11T04:18:46Z",
   "game_date": "2026-03-10",
   "games": [
     {
@@ -21,9 +21,9 @@
       "away_abbrev": "DET",
       "home_win_pct": 12,
       "away_win_pct": 88,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -33,9 +33,9 @@
       "away_abbrev": "WAS",
       "home_win_pct": 88,
       "away_win_pct": 12,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -57,9 +57,9 @@
       "away_abbrev": "TOR",
       "home_win_pct": 52,
       "away_win_pct": 48,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -69,9 +69,9 @@
       "away_abbrev": "PHX",
       "home_win_pct": 35,
       "away_win_pct": 65,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -81,9 +81,9 @@
       "away_abbrev": "BOS",
       "home_win_pct": 67,
       "away_win_pct": 33,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -93,9 +93,9 @@
       "away_abbrev": "CHI",
       "home_win_pct": 56,
       "away_win_pct": 44,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -105,9 +105,9 @@
       "away_abbrev": "CHA",
       "home_win_pct": 29,
       "away_win_pct": 71,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -117,9 +117,9 @@
       "away_abbrev": "IND",
       "home_win_pct": 59,
       "away_win_pct": 41,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -127,11 +127,11 @@
       "away_team": "Minnesota Timberwolves",
       "home_abbrev": "LAL",
       "away_abbrev": "MIN",
-      "home_win_pct": 58,
-      "away_win_pct": 42,
-      "tip_time_et": "11:00 pm ET",
-      "tip_time_aedt": "2:00 pm AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 55,
+      "away_win_pct": 45,
+      "tip_time_et": "Halftime",
+      "tip_time_aedt": "Halftime",
+      "game_status": "live",
       "injury_adjusted": true
     }
   ]
