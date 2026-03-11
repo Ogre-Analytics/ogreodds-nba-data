@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T04:18:46Z",
+  "generated_at": "2026-03-11T05:31:30Z",
   "game_date": "2026-03-10",
   "games": [
     {
@@ -93,9 +93,9 @@
       "away_abbrev": "CHI",
       "home_win_pct": 56,
       "away_win_pct": 44,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -105,9 +105,9 @@
       "away_abbrev": "CHA",
       "home_win_pct": 29,
       "away_win_pct": 71,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -117,9 +117,9 @@
       "away_abbrev": "IND",
       "home_win_pct": 59,
       "away_win_pct": 41,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -129,8 +129,8 @@
       "away_abbrev": "MIN",
       "home_win_pct": 55,
       "away_win_pct": 45,
-      "tip_time_et": "Halftime",
-      "tip_time_aedt": "Halftime",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
       "game_status": "live",
       "injury_adjusted": true
     }
