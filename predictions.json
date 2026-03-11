@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T06:32:41Z",
+  "generated_at": "2026-03-11T07:31:55Z",
   "game_date": "2026-03-11",
   "games": [
     {
@@ -7,72 +7,72 @@
       "away_team": "Cleveland Cavaliers",
       "home_abbrev": "ORL",
       "away_abbrev": "CLE",
-      "home_win_pct": 47,
-      "away_win_pct": 53,
+      "home_win_pct": 39,
+      "away_win_pct": 61,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     },
     {
       "home_team": "New Orleans Pelicans",
       "away_team": "Toronto Raptors",
       "home_abbrev": "NOP",
       "away_abbrev": "TOR",
-      "home_win_pct": 51,
-      "away_win_pct": 49,
+      "home_win_pct": 56,
+      "away_win_pct": 44,
       "tip_time_et": "8:00 pm ET",
       "tip_time_aedt": "11:00 am AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     },
     {
       "home_team": "Utah Jazz",
       "away_team": "New York Knicks",
       "home_abbrev": "UTA",
       "away_abbrev": "NYK",
-      "home_win_pct": 23,
-      "away_win_pct": 77,
+      "home_win_pct": 14,
+      "away_win_pct": 86,
       "tip_time_et": "9:00 pm ET",
       "tip_time_aedt": "12:00 pm AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     },
     {
       "home_team": "Denver Nuggets",
       "away_team": "Houston Rockets",
       "home_abbrev": "DEN",
       "away_abbrev": "HOU",
-      "home_win_pct": 65,
-      "away_win_pct": 35,
+      "home_win_pct": 62,
+      "away_win_pct": 38,
       "tip_time_et": "10:00 pm ET",
       "tip_time_aedt": "1:00 pm AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     },
     {
       "home_team": "Sacramento Kings",
       "away_team": "Charlotte Hornets",
       "home_abbrev": "SAC",
       "away_abbrev": "CHA",
-      "home_win_pct": 29,
-      "away_win_pct": 71,
+      "home_win_pct": 15,
+      "away_win_pct": 85,
       "tip_time_et": "10:00 pm ET",
       "tip_time_aedt": "1:00 pm AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     },
     {
       "home_team": "Los Angeles Clippers",
       "away_team": "Minnesota Timberwolves",
       "home_abbrev": "LAC",
       "away_abbrev": "MIN",
-      "home_win_pct": 60,
-      "away_win_pct": 40,
+      "home_win_pct": 55,
+      "away_win_pct": 45,
       "tip_time_et": "10:30 pm ET",
       "tip_time_aedt": "1:30 pm AEDT",
       "game_status": "scheduled",
-      "injury_adjusted": false
+      "injury_adjusted": true
     }
   ]
 }
