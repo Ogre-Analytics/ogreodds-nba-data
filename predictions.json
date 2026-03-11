@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T19:51:19Z",
+  "generated_at": "2026-03-11T20:31:09Z",
   "game_date": "2026-03-11",
   "games": [
     {
@@ -55,8 +55,8 @@
       "away_team": "Charlotte Hornets",
       "home_abbrev": "SAC",
       "away_abbrev": "CHA",
-      "home_win_pct": 12,
-      "away_win_pct": 88,
+      "home_win_pct": 9,
+      "away_win_pct": 91,
       "tip_time_et": "10:00 pm ET",
       "tip_time_aedt": "1:00 pm AEDT",
       "game_status": "scheduled",
