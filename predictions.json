@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-12T20:51:57Z",
+  "generated_at": "2026-03-12T21:29:46Z",
   "game_date": "2026-03-12",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "Phoenix Suns",
       "home_abbrev": "IND",
       "away_abbrev": "PHX",
-      "home_win_pct": 18,
-      "away_win_pct": 82,
+      "home_win_pct": 19,
+      "away_win_pct": 81,
       "tip_time_et": "7:00 pm ET",
       "tip_time_aedt": "10:00 am AEDT",
       "game_status": "scheduled",
