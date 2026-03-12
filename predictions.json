@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-12T01:49:06Z",
+  "generated_at": "2026-03-12T04:12:06Z",
   "game_date": "2026-03-11",
   "games": [
     {
@@ -9,9 +9,9 @@
       "away_abbrev": "CLE",
       "home_win_pct": 39,
       "away_win_pct": 61,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -21,9 +21,9 @@
       "away_abbrev": "TOR",
       "home_win_pct": 51,
       "away_win_pct": 49,
-      "tip_time_et": "3rd Qtr",
-      "tip_time_aedt": "3rd Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -31,11 +31,11 @@
       "away_team": "New York Knicks",
       "home_abbrev": "UTA",
       "away_abbrev": "NYK",
-      "home_win_pct": 16,
-      "away_win_pct": 84,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
-      "game_status": "live",
+      "home_win_pct": 11,
+      "away_win_pct": 89,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -45,9 +45,9 @@
       "away_abbrev": "HOU",
       "home_win_pct": 63,
       "away_win_pct": 37,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -55,11 +55,11 @@
       "away_team": "Charlotte Hornets",
       "home_abbrev": "SAC",
       "away_abbrev": "CHA",
-      "home_win_pct": 9,
-      "away_win_pct": 91,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 11,
+      "away_win_pct": 89,
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -69,9 +69,9 @@
       "away_abbrev": "MIN",
       "home_win_pct": 60,
       "away_win_pct": 40,
-      "tip_time_et": "10:30 pm ET",
-      "tip_time_aedt": "1:30 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     }
   ]
