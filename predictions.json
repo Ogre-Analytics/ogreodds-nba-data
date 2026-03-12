@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-12T21:57:20Z",
+  "generated_at": "2026-03-12T22:28:49Z",
   "game_date": "2026-03-12",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "Phoenix Suns",
       "home_abbrev": "IND",
       "away_abbrev": "PHX",
-      "home_win_pct": 19,
-      "away_win_pct": 81,
+      "home_win_pct": 23,
+      "away_win_pct": 77,
       "tip_time_et": "7:00 pm ET",
       "tip_time_aedt": "10:00 am AEDT",
       "game_status": "scheduled",
@@ -55,8 +55,8 @@
       "away_team": "Milwaukee Bucks",
       "home_abbrev": "MIA",
       "away_abbrev": "MIL",
-      "home_win_pct": 84,
-      "away_win_pct": 16,
+      "home_win_pct": 79,
+      "away_win_pct": 21,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
