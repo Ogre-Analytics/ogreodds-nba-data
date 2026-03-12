@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-12T19:29:52Z",
+  "generated_at": "2026-03-12T20:00:48Z",
   "game_date": "2026-03-12",
   "games": [
     {
@@ -91,8 +91,8 @@
       "away_team": "Chicago Bulls",
       "home_abbrev": "LAL",
       "away_abbrev": "CHI",
-      "home_win_pct": 88,
-      "away_win_pct": 12,
+      "home_win_pct": 86,
+      "away_win_pct": 14,
       "tip_time_et": "10:30 pm ET",
       "tip_time_aedt": "1:30 pm AEDT",
       "game_status": "scheduled",
