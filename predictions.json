@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T22:52:03Z",
+  "generated_at": "2026-03-13T23:25:11Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -7,8 +7,8 @@
       "away_team": "Memphis Grizzlies",
       "home_abbrev": "DET",
       "away_abbrev": "MEM",
-      "home_win_pct": 90,
-      "away_win_pct": 10,
+      "home_win_pct": 92,
+      "away_win_pct": 8,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
