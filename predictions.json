@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T22:25:21Z",
+  "generated_at": "2026-03-13T22:52:03Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "New York Knicks",
       "home_abbrev": "IND",
       "away_abbrev": "NYK",
-      "home_win_pct": 41,
-      "away_win_pct": 59,
+      "home_win_pct": 39,
+      "away_win_pct": 61,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
@@ -55,8 +55,8 @@
       "away_team": "Cleveland Cavaliers",
       "home_abbrev": "DAL",
       "away_abbrev": "CLE",
-      "home_win_pct": 24,
-      "away_win_pct": 76,
+      "home_win_pct": 27,
+      "away_win_pct": 73,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
