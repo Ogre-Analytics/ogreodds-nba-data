@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T01:50:10Z",
+  "generated_at": "2026-03-13T04:10:22Z",
   "game_date": "2026-03-12",
   "games": [
     {
@@ -45,9 +45,9 @@
       "away_abbrev": "BKN",
       "home_win_pct": 94,
       "away_win_pct": 6,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -57,9 +57,9 @@
       "away_abbrev": "MIL",
       "home_win_pct": 72,
       "away_win_pct": 28,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -69,9 +69,9 @@
       "away_abbrev": "DEN",
       "home_win_pct": 82,
       "away_win_pct": 18,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -81,9 +81,9 @@
       "away_abbrev": "BOS",
       "home_win_pct": 66,
       "away_win_pct": 34,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -93,9 +93,9 @@
       "away_abbrev": "CHI",
       "home_win_pct": 93,
       "away_win_pct": 7,
-      "tip_time_et": "10:30 pm ET",
-      "tip_time_aedt": "1:30 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -105,9 +105,9 @@
       "away_abbrev": "DAL",
       "home_win_pct": 55,
       "away_win_pct": 45,
-      "tip_time_et": "End of 3rd Qtr",
-      "tip_time_aedt": "End of 3rd Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     }
   ]
