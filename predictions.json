@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-12T23:49:55Z",
+  "generated_at": "2026-03-13T01:50:10Z",
   "game_date": "2026-03-12",
   "games": [
     {
@@ -9,9 +9,9 @@
       "away_abbrev": "PHI",
       "home_win_pct": 79,
       "away_win_pct": 21,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -21,9 +21,9 @@
       "away_abbrev": "PHX",
       "home_win_pct": 23,
       "away_win_pct": 77,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -33,9 +33,9 @@
       "away_abbrev": "WAS",
       "home_win_pct": 74,
       "away_win_pct": 26,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -45,8 +45,8 @@
       "away_abbrev": "BKN",
       "home_win_pct": 94,
       "away_win_pct": 6,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -57,8 +57,8 @@
       "away_abbrev": "MIL",
       "home_win_pct": 72,
       "away_win_pct": 28,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -69,9 +69,9 @@
       "away_abbrev": "DEN",
       "home_win_pct": 82,
       "away_win_pct": 18,
-      "tip_time_et": "9:00 pm ET",
-      "tip_time_aedt": "12:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "2nd Qtr",
+      "tip_time_aedt": "2nd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -79,11 +79,11 @@
       "away_team": "Boston Celtics",
       "home_abbrev": "OKC",
       "away_abbrev": "BOS",
-      "home_win_pct": 58,
-      "away_win_pct": 42,
-      "tip_time_et": "9:30 pm ET",
-      "tip_time_aedt": "12:30 pm AEDT",
-      "game_status": "scheduled",
+      "home_win_pct": 66,
+      "away_win_pct": 34,
+      "tip_time_et": "1st Qtr",
+      "tip_time_aedt": "1st Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -91,8 +91,8 @@
       "away_team": "Chicago Bulls",
       "home_abbrev": "LAL",
       "away_abbrev": "CHI",
-      "home_win_pct": 86,
-      "away_win_pct": 14,
+      "home_win_pct": 93,
+      "away_win_pct": 7,
       "tip_time_et": "10:30 pm ET",
       "tip_time_aedt": "1:30 pm AEDT",
       "game_status": "scheduled",
@@ -105,9 +105,9 @@
       "away_abbrev": "DAL",
       "home_win_pct": 55,
       "away_win_pct": 45,
-      "tip_time_et": "8:00 pm ET",
-      "tip_time_aedt": "11:00 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "End of 3rd Qtr",
+      "tip_time_aedt": "End of 3rd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     }
   ]
