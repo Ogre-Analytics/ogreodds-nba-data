@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T12:00:09Z",
+  "generated_at": "2026-03-13T13:19:20Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "New York Knicks",
       "home_abbrev": "IND",
       "away_abbrev": "NYK",
-      "home_win_pct": 21,
-      "away_win_pct": 79,
+      "home_win_pct": 28,
+      "away_win_pct": 72,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
