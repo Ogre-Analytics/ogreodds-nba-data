@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T21:48:09Z",
+  "generated_at": "2026-03-13T22:25:21Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "New York Knicks",
       "home_abbrev": "IND",
       "away_abbrev": "NYK",
-      "home_win_pct": 33,
-      "away_win_pct": 67,
+      "home_win_pct": 41,
+      "away_win_pct": 59,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
@@ -39,26 +39,26 @@
       "injury_adjusted": true
     },
     {
-      "home_team": "Dallas Mavericks",
-      "away_team": "Cleveland Cavaliers",
-      "home_abbrev": "DAL",
-      "away_abbrev": "CLE",
-      "home_win_pct": 31,
-      "away_win_pct": 69,
-      "tip_time_et": "7:30 pm ET",
-      "tip_time_aedt": "10:30 am AEDT",
-      "game_status": "scheduled",
-      "injury_adjusted": true
-    },
-    {
       "home_team": "Houston Rockets",
       "away_team": "New Orleans Pelicans",
       "home_abbrev": "HOU",
       "away_abbrev": "NOP",
-      "home_win_pct": 59,
-      "away_win_pct": 41,
+      "home_win_pct": 49,
+      "away_win_pct": 51,
       "tip_time_et": "8:00 pm ET",
       "tip_time_aedt": "11:00 am AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
+      "home_team": "Dallas Mavericks",
+      "away_team": "Cleveland Cavaliers",
+      "home_abbrev": "DAL",
+      "away_abbrev": "CLE",
+      "home_win_pct": 24,
+      "away_win_pct": 76,
+      "tip_time_et": "7:30 pm ET",
+      "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
       "injury_adjusted": true
     },
