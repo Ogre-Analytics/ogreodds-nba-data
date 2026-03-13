@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T19:29:19Z",
+  "generated_at": "2026-03-13T19:56:45Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -55,8 +55,8 @@
       "away_team": "Cleveland Cavaliers",
       "home_abbrev": "DAL",
       "away_abbrev": "CLE",
-      "home_win_pct": 32,
-      "away_win_pct": 68,
+      "home_win_pct": 31,
+      "away_win_pct": 69,
       "tip_time_et": "7:30 pm ET",
       "tip_time_aedt": "10:30 am AEDT",
       "game_status": "scheduled",
