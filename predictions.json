@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T21:57:59Z",
+  "generated_at": "2026-03-14T22:30:58Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -19,12 +19,12 @@
       "away_team": "Milwaukee Bucks",
       "home_abbrev": "ATL",
       "away_abbrev": "MIL",
-      "home_win_pct": 83,
-      "away_win_pct": 17,
+      "home_win_pct": 74,
+      "away_win_pct": 26,
       "tip_time_et": "Final",
       "tip_time_aedt": "Final",
       "game_status": "final",
-      "injury_adjusted": true
+      "injury_adjusted": false
     },
     {
       "home_team": "Boston Celtics",
@@ -33,9 +33,9 @@
       "away_abbrev": "WAS",
       "home_win_pct": 96,
       "away_win_pct": 4,
-      "tip_time_et": "6:00 pm ET",
-      "tip_time_aedt": "9:00 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "1st Qtr",
+      "tip_time_aedt": "1st Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -55,11 +55,11 @@
       "away_team": "Charlotte Hornets",
       "home_abbrev": "SAS",
       "away_abbrev": "CHA",
-      "home_win_pct": 63,
-      "away_win_pct": 37,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "home_win_pct": 66,
+      "away_win_pct": 34,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
