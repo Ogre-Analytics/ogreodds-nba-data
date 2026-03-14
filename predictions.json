@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T17:53:30Z",
+  "generated_at": "2026-03-14T18:33:40Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -9,8 +9,8 @@
       "away_abbrev": "BKN",
       "home_win_pct": 75,
       "away_win_pct": 25,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -55,8 +55,8 @@
       "away_team": "Charlotte Hornets",
       "home_abbrev": "SAS",
       "away_abbrev": "CHA",
-      "home_win_pct": 66,
-      "away_win_pct": 34,
+      "home_win_pct": 63,
+      "away_win_pct": 37,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
