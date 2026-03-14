@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T21:00:04Z",
+  "generated_at": "2026-03-14T21:35:28Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -21,9 +21,9 @@
       "away_abbrev": "MIL",
       "home_win_pct": 80,
       "away_win_pct": 20,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -57,8 +57,8 @@
       "away_abbrev": "CHA",
       "home_win_pct": 63,
       "away_win_pct": 37,
-      "tip_time_et": "3rd Qtr",
-      "tip_time_aedt": "3rd Qtr",
+      "tip_time_et": "Start of 4th Qtr",
+      "tip_time_aedt": "Start of 4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
