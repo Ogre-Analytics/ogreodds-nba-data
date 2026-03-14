@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T14:05:30Z",
+  "generated_at": "2026-03-14T14:47:17Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -27,6 +27,18 @@
       "injury_adjusted": true
     },
     {
+      "home_team": "San Antonio Spurs",
+      "away_team": "Charlotte Hornets",
+      "home_abbrev": "SAS",
+      "away_abbrev": "CHA",
+      "home_win_pct": 66,
+      "away_win_pct": 34,
+      "tip_time_et": "3:30 pm ET",
+      "tip_time_aedt": "6:30 am AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
       "home_team": "Boston Celtics",
       "away_team": "Washington Wizards",
       "home_abbrev": "BOS",
@@ -47,18 +59,6 @@
       "away_win_pct": 21,
       "tip_time_et": "8:00 pm ET",
       "tip_time_aedt": "11:00 am AEDT",
-      "game_status": "scheduled",
-      "injury_adjusted": true
-    },
-    {
-      "home_team": "San Antonio Spurs",
-      "away_team": "Charlotte Hornets",
-      "home_abbrev": "SAS",
-      "away_abbrev": "CHA",
-      "home_win_pct": 66,
-      "away_win_pct": 34,
-      "tip_time_et": "3:30 pm ET",
-      "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
       "injury_adjusted": true
     },
