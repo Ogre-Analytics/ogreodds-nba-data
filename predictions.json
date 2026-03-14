@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T15:50:44Z",
+  "generated_at": "2026-03-14T16:27:20Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -67,8 +67,8 @@
       "away_team": "Denver Nuggets",
       "home_abbrev": "LAL",
       "away_abbrev": "DEN",
-      "home_win_pct": 69,
-      "away_win_pct": 31,
+      "home_win_pct": 70,
+      "away_win_pct": 30,
       "tip_time_et": "8:30 pm ET",
       "tip_time_aedt": "11:30 am AEDT",
       "game_status": "scheduled",
