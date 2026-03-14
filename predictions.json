@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T21:35:28Z",
+  "generated_at": "2026-03-14T21:57:59Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -7,8 +7,8 @@
       "away_team": "Brooklyn Nets",
       "home_abbrev": "PHI",
       "away_abbrev": "BKN",
-      "home_win_pct": 75,
-      "away_win_pct": 25,
+      "home_win_pct": 64,
+      "away_win_pct": 36,
       "tip_time_et": "Final",
       "tip_time_aedt": "Final",
       "game_status": "final",
@@ -19,8 +19,8 @@
       "away_team": "Milwaukee Bucks",
       "home_abbrev": "ATL",
       "away_abbrev": "MIL",
-      "home_win_pct": 80,
-      "away_win_pct": 20,
+      "home_win_pct": 83,
+      "away_win_pct": 17,
       "tip_time_et": "Final",
       "tip_time_aedt": "Final",
       "game_status": "final",
@@ -57,8 +57,8 @@
       "away_abbrev": "CHA",
       "home_win_pct": 63,
       "away_win_pct": 37,
-      "tip_time_et": "Start of 4th Qtr",
-      "tip_time_aedt": "Start of 4th Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
