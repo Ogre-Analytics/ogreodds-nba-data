@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T23:51:02Z",
+  "generated_at": "2026-03-14T01:48:17Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -9,8 +9,8 @@
       "away_abbrev": "MEM",
       "home_win_pct": 92,
       "away_win_pct": 8,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -21,8 +21,8 @@
       "away_abbrev": "NYK",
       "home_win_pct": 39,
       "away_win_pct": 61,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -33,8 +33,8 @@
       "away_abbrev": "PHX",
       "home_win_pct": 83,
       "away_win_pct": 17,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -45,9 +45,9 @@
       "away_abbrev": "NOP",
       "home_win_pct": 49,
       "away_win_pct": 51,
-      "tip_time_et": "8:00 pm ET",
-      "tip_time_aedt": "11:00 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -57,8 +57,8 @@
       "away_abbrev": "CLE",
       "home_win_pct": 27,
       "away_win_pct": 73,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -79,8 +79,8 @@
       "away_team": "Utah Jazz",
       "home_abbrev": "POR",
       "away_abbrev": "UTA",
-      "home_win_pct": 83,
-      "away_win_pct": 17,
+      "home_win_pct": 82,
+      "away_win_pct": 18,
       "tip_time_et": "10:00 pm ET",
       "tip_time_aedt": "1:00 pm AEDT",
       "game_status": "scheduled",
@@ -91,8 +91,8 @@
       "away_team": "Chicago Bulls",
       "home_abbrev": "LAC",
       "away_abbrev": "CHI",
-      "home_win_pct": 90,
-      "away_win_pct": 10,
+      "home_win_pct": 92,
+      "away_win_pct": 8,
       "tip_time_et": "10:30 pm ET",
       "tip_time_aedt": "1:30 pm AEDT",
       "game_status": "scheduled",
