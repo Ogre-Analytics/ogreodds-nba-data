@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T13:34:43Z",
+  "generated_at": "2026-03-14T14:05:30Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -7,8 +7,8 @@
       "away_team": "Brooklyn Nets",
       "home_abbrev": "PHI",
       "away_abbrev": "BKN",
-      "home_win_pct": 70,
-      "away_win_pct": 30,
+      "home_win_pct": 77,
+      "away_win_pct": 23,
       "tip_time_et": "1:00 pm ET",
       "tip_time_aedt": "4:00 am AEDT",
       "game_status": "scheduled",
