@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T15:25:24Z",
+  "generated_at": "2026-03-14T15:50:44Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -7,8 +7,8 @@
       "away_team": "Brooklyn Nets",
       "home_abbrev": "PHI",
       "away_abbrev": "BKN",
-      "home_win_pct": 77,
-      "away_win_pct": 23,
+      "home_win_pct": 75,
+      "away_win_pct": 25,
       "tip_time_et": "1:00 pm ET",
       "tip_time_aedt": "4:00 am AEDT",
       "game_status": "scheduled",
@@ -23,18 +23,6 @@
       "away_win_pct": 29,
       "tip_time_et": "3:00 pm ET",
       "tip_time_aedt": "6:00 am AEDT",
-      "game_status": "scheduled",
-      "injury_adjusted": true
-    },
-    {
-      "home_team": "San Antonio Spurs",
-      "away_team": "Charlotte Hornets",
-      "home_abbrev": "SAS",
-      "away_abbrev": "CHA",
-      "home_win_pct": 66,
-      "away_win_pct": 34,
-      "tip_time_et": "3:30 pm ET",
-      "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
       "injury_adjusted": true
     },
@@ -59,6 +47,18 @@
       "away_win_pct": 21,
       "tip_time_et": "8:00 pm ET",
       "tip_time_aedt": "11:00 am AEDT",
+      "game_status": "scheduled",
+      "injury_adjusted": true
+    },
+    {
+      "home_team": "San Antonio Spurs",
+      "away_team": "Charlotte Hornets",
+      "home_abbrev": "SAS",
+      "away_abbrev": "CHA",
+      "home_win_pct": 66,
+      "away_win_pct": 34,
+      "tip_time_et": "3:30 pm ET",
+      "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
       "injury_adjusted": true
     },
