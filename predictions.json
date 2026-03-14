@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T01:48:17Z",
+  "generated_at": "2026-03-14T04:08:43Z",
   "game_date": "2026-03-13",
   "games": [
     {
@@ -7,11 +7,11 @@
       "away_team": "Memphis Grizzlies",
       "home_abbrev": "DET",
       "away_abbrev": "MEM",
-      "home_win_pct": 92,
-      "away_win_pct": 8,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "home_win_pct": 91,
+      "away_win_pct": 9,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -19,11 +19,11 @@
       "away_team": "New York Knicks",
       "home_abbrev": "IND",
       "away_abbrev": "NYK",
-      "home_win_pct": 39,
-      "away_win_pct": 61,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "home_win_pct": 27,
+      "away_win_pct": 73,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -33,9 +33,9 @@
       "away_abbrev": "PHX",
       "home_win_pct": 83,
       "away_win_pct": 17,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -43,11 +43,11 @@
       "away_team": "New Orleans Pelicans",
       "home_abbrev": "HOU",
       "away_abbrev": "NOP",
-      "home_win_pct": 49,
-      "away_win_pct": 51,
-      "tip_time_et": "3rd Qtr",
-      "tip_time_aedt": "3rd Qtr",
-      "game_status": "live",
+      "home_win_pct": 57,
+      "away_win_pct": 43,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -55,11 +55,11 @@
       "away_team": "Cleveland Cavaliers",
       "home_abbrev": "DAL",
       "away_abbrev": "CLE",
-      "home_win_pct": 27,
-      "away_win_pct": 73,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "home_win_pct": 32,
+      "away_win_pct": 68,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -69,9 +69,9 @@
       "away_abbrev": "MIN",
       "home_win_pct": 42,
       "away_win_pct": 58,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -81,9 +81,9 @@
       "away_abbrev": "UTA",
       "home_win_pct": 82,
       "away_win_pct": 18,
-      "tip_time_et": "10:00 pm ET",
-      "tip_time_aedt": "1:00 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -93,9 +93,9 @@
       "away_abbrev": "CHI",
       "home_win_pct": 92,
       "away_win_pct": 8,
-      "tip_time_et": "10:30 pm ET",
-      "tip_time_aedt": "1:30 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     }
   ]
