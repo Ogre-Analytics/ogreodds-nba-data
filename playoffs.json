@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T04:35:09Z",
+  "generated_at": "2026-03-14T04:34:07Z",
   "season": "2025-26",
   "simulations": 3000,
   "teams": [
@@ -14,10 +14,10 @@
       "playoffs_pct": 100.0,
       "top6_pct": 100.0,
       "playin_pct": 0.0,
-      "win_r1_pct": 52.6,
-      "win_r2_pct": 23.8,
-      "finals_pct": 9.9,
-      "champ_pct": 3.8
+      "win_r1_pct": 54.4,
+      "win_r2_pct": 24.9,
+      "finals_pct": 10.6,
+      "champ_pct": 4.2
     },
     {
       "team": "BOS",
@@ -30,10 +30,10 @@
       "playoffs_pct": 100.0,
       "top6_pct": 100.0,
       "playin_pct": 0.0,
-      "win_r1_pct": 66.1,
+      "win_r1_pct": 65.8,
       "win_r2_pct": 41.6,
-      "finals_pct": 26.0,
-      "champ_pct": 12.2
+      "finals_pct": 25.9,
+      "champ_pct": 12.3
     },
     {
       "team": "NYK",
@@ -46,10 +46,10 @@
       "playoffs_pct": 100.0,
       "top6_pct": 100.0,
       "playin_pct": 0.0,
-      "win_r1_pct": 66.8,
-      "win_r2_pct": 35.8,
-      "finals_pct": 20.8,
-      "champ_pct": 10.6
+      "win_r1_pct": 65.4,
+      "win_r2_pct": 35.1,
+      "finals_pct": 20.1,
+      "champ_pct": 10.0
     },
     {
       "team": "CLE",
@@ -59,13 +59,13 @@
       "wins": 39,
       "losses": 25,
       "games_back": 6.5,
-      "playoffs_pct": 100.0,
-      "top6_pct": 99.9,
-      "playin_pct": 0.1,
-      "win_r1_pct": 59.8,
-      "win_r2_pct": 28.9,
-      "finals_pct": 11.5,
-      "champ_pct": 4.8
+      "playoffs_pct": 99.9,
+      "top6_pct": 99.8,
+      "playin_pct": 0.2,
+      "win_r1_pct": 55.4,
+      "win_r2_pct": 25.7,
+      "finals_pct": 10.1,
+      "champ_pct": 4.0
     },
     {
       "team": "MIA",
@@ -75,13 +75,13 @@
       "wins": 36,
       "losses": 29,
       "games_back": 10.0,
-      "playoffs_pct": 89.7,
-      "top6_pct": 65.4,
-      "playin_pct": 34.6,
-      "win_r1_pct": 35.2,
-      "win_r2_pct": 16.4,
-      "finals_pct": 6.9,
-      "champ_pct": 2.8
+      "playoffs_pct": 92.0,
+      "top6_pct": 70.8,
+      "playin_pct": 29.2,
+      "win_r1_pct": 40.6,
+      "win_r2_pct": 20.3,
+      "finals_pct": 9.1,
+      "champ_pct": 4.0
     },
     {
       "team": "TOR",
@@ -91,11 +91,11 @@
       "wins": 36,
       "losses": 27,
       "games_back": 9.0,
-      "playoffs_pct": 93.4,
-      "top6_pct": 78.3,
-      "playin_pct": 21.7,
-      "win_r1_pct": 30.5,
-      "win_r2_pct": 10.1,
+      "playoffs_pct": 87.6,
+      "top6_pct": 67.5,
+      "playin_pct": 32.5,
+      "win_r1_pct": 29.2,
+      "win_r2_pct": 9.8,
       "finals_pct": 3.1,
       "champ_pct": 0.9
     },
@@ -107,13 +107,13 @@
       "wins": 35,
       "losses": 28,
       "games_back": 10.0,
-      "playoffs_pct": 62.2,
-      "top6_pct": 23.9,
-      "playin_pct": 76.1,
-      "win_r1_pct": 18.0,
-      "win_r2_pct": 5.5,
-      "finals_pct": 1.6,
-      "champ_pct": 0.4
+      "playoffs_pct": 67.3,
+      "top6_pct": 26.8,
+      "playin_pct": 73.2,
+      "win_r1_pct": 20.1,
+      "win_r2_pct": 6.2,
+      "finals_pct": 1.8,
+      "champ_pct": 0.5
     },
     {
       "team": "PHI",
@@ -123,12 +123,12 @@
       "wins": 34,
       "losses": 29,
       "games_back": 11.0,
-      "playoffs_pct": 33.1,
-      "top6_pct": 6.6,
-      "playin_pct": 93.4,
-      "win_r1_pct": 10.1,
-      "win_r2_pct": 2.8,
-      "finals_pct": 0.8,
+      "playoffs_pct": 32.3,
+      "top6_pct": 7.1,
+      "playin_pct": 92.9,
+      "win_r1_pct": 9.2,
+      "win_r2_pct": 2.5,
+      "finals_pct": 0.7,
       "champ_pct": 0.2
     },
     {
@@ -139,13 +139,13 @@
       "wins": 33,
       "losses": 31,
       "games_back": 12.5,
-      "playoffs_pct": 55.4,
-      "top6_pct": 12.4,
-      "playin_pct": 87.6,
-      "win_r1_pct": 22.2,
-      "win_r2_pct": 10.3,
-      "finals_pct": 4.4,
-      "champ_pct": 1.9
+      "playoffs_pct": 54.1,
+      "top6_pct": 11.9,
+      "playin_pct": 88.1,
+      "win_r1_pct": 21.1,
+      "win_r2_pct": 9.4,
+      "finals_pct": 3.9,
+      "champ_pct": 1.6
     },
     {
       "team": "CHA",
@@ -155,13 +155,13 @@
       "wins": 32,
       "losses": 33,
       "games_back": 14.0,
-      "playoffs_pct": 66.3,
-      "top6_pct": 13.5,
-      "playin_pct": 86.5,
+      "playoffs_pct": 66.8,
+      "top6_pct": 16.2,
+      "playin_pct": 83.8,
       "win_r1_pct": 38.8,
-      "win_r2_pct": 24.7,
-      "finals_pct": 15.0,
-      "champ_pct": 7.1
+      "win_r2_pct": 24.4,
+      "finals_pct": 14.7,
+      "champ_pct": 6.9
     },
     {
       "team": "MIL",
@@ -254,10 +254,10 @@
       "playoffs_pct": 100.0,
       "top6_pct": 100.0,
       "playin_pct": 0.0,
-      "win_r1_pct": 75.9,
-      "win_r2_pct": 61.0,
-      "finals_pct": 41.8,
-      "champ_pct": 27.5
+      "win_r1_pct": 73.2,
+      "win_r2_pct": 57.6,
+      "finals_pct": 36.7,
+      "champ_pct": 24.0
     },
     {
       "team": "SAS",
@@ -270,10 +270,10 @@
       "playoffs_pct": 100.0,
       "top6_pct": 100.0,
       "playin_pct": 0.0,
-      "win_r1_pct": 81.5,
-      "win_r2_pct": 66.2,
-      "finals_pct": 35.5,
-      "champ_pct": 21.6
+      "win_r1_pct": 82.0,
+      "win_r2_pct": 66.6,
+      "finals_pct": 39.2,
+      "champ_pct": 24.7
     },
     {
       "team": "MIN",
@@ -283,13 +283,13 @@
       "wins": 40,
       "losses": 24,
       "games_back": 9.5,
-      "playoffs_pct": 99.7,
-      "top6_pct": 98.3,
-      "playin_pct": 1.7,
-      "win_r1_pct": 53.3,
-      "win_r2_pct": 13.8,
-      "finals_pct": 4.2,
-      "champ_pct": 1.0
+      "playoffs_pct": 99.8,
+      "top6_pct": 98.6,
+      "playin_pct": 1.4,
+      "win_r1_pct": 54.2,
+      "win_r2_pct": 14.6,
+      "finals_pct": 4.6,
+      "champ_pct": 1.1
     },
     {
       "team": "HOU",
@@ -299,13 +299,13 @@
       "wins": 39,
       "losses": 24,
       "games_back": 10.0,
-      "playoffs_pct": 99.6,
-      "top6_pct": 98.1,
-      "playin_pct": 1.9,
-      "win_r1_pct": 44.0,
-      "win_r2_pct": 10.3,
-      "finals_pct": 2.7,
-      "champ_pct": 0.7
+      "playoffs_pct": 99.3,
+      "top6_pct": 97.0,
+      "playin_pct": 3.0,
+      "win_r1_pct": 43.5,
+      "win_r2_pct": 10.8,
+      "finals_pct": 3.0,
+      "champ_pct": 0.8
     },
     {
       "team": "DEN",
@@ -315,13 +315,13 @@
       "wins": 39,
       "losses": 25,
       "games_back": 10.5,
-      "playoffs_pct": 99.0,
-      "top6_pct": 95.1,
-      "playin_pct": 4.9,
-      "win_r1_pct": 42.6,
-      "win_r2_pct": 10.7,
-      "finals_pct": 3.0,
-      "champ_pct": 0.7
+      "playoffs_pct": 99.2,
+      "top6_pct": 96.2,
+      "playin_pct": 3.8,
+      "win_r1_pct": 43.3,
+      "win_r2_pct": 11.4,
+      "finals_pct": 3.3,
+      "champ_pct": 0.8
     },
     {
       "team": "LAL",
@@ -331,13 +331,13 @@
       "wins": 39,
       "losses": 25,
       "games_back": 10.5,
-      "playoffs_pct": 99.5,
-      "top6_pct": 97.5,
-      "playin_pct": 2.5,
-      "win_r1_pct": 57.1,
-      "win_r2_pct": 17.3,
-      "finals_pct": 6.0,
-      "champ_pct": 1.7
+      "playoffs_pct": 99.0,
+      "top6_pct": 95.6,
+      "playin_pct": 4.4,
+      "win_r1_pct": 55.8,
+      "win_r2_pct": 17.9,
+      "finals_pct": 6.4,
+      "champ_pct": 1.9
     },
     {
       "team": "PHX",
@@ -347,13 +347,13 @@
       "wins": 37,
       "losses": 27,
       "games_back": 12.5,
-      "playoffs_pct": 68.5,
-      "top6_pct": 8.6,
-      "playin_pct": 91.4,
-      "win_r1_pct": 11.8,
-      "win_r2_pct": 3.8,
-      "finals_pct": 0.9,
-      "champ_pct": 0.1
+      "playoffs_pct": 68.4,
+      "top6_pct": 9.4,
+      "playin_pct": 90.6,
+      "win_r1_pct": 14.2,
+      "win_r2_pct": 4.8,
+      "finals_pct": 1.2,
+      "champ_pct": 0.2
     },
     {
       "team": "GSW",
@@ -363,12 +363,12 @@
       "wins": 32,
       "losses": 31,
       "games_back": 17.0,
-      "playoffs_pct": 41.1,
-      "top6_pct": 0.4,
-      "playin_pct": 99.6,
-      "win_r1_pct": 7.5,
-      "win_r2_pct": 3.4,
-      "finals_pct": 0.8,
+      "playoffs_pct": 44.1,
+      "top6_pct": 0.8,
+      "playin_pct": 99.2,
+      "win_r1_pct": 8.5,
+      "win_r2_pct": 3.8,
+      "finals_pct": 0.9,
       "champ_pct": 0.2
     },
     {
@@ -379,13 +379,13 @@
       "wins": 31,
       "losses": 32,
       "games_back": 18.0,
-      "playoffs_pct": 64.5,
-      "top6_pct": 1.8,
-      "playin_pct": 98.2,
-      "win_r1_pct": 20.4,
-      "win_r2_pct": 11.0,
-      "finals_pct": 4.4,
-      "champ_pct": 1.7
+      "playoffs_pct": 65.4,
+      "top6_pct": 2.4,
+      "playin_pct": 97.6,
+      "win_r1_pct": 20.1,
+      "win_r2_pct": 10.5,
+      "finals_pct": 4.1,
+      "champ_pct": 1.6
     },
     {
       "team": "POR",
@@ -395,13 +395,13 @@
       "wins": 31,
       "losses": 34,
       "games_back": 19.0,
-      "playoffs_pct": 28.1,
-      "top6_pct": 0.2,
-      "playin_pct": 99.8,
-      "win_r1_pct": 5.9,
-      "win_r2_pct": 2.5,
-      "finals_pct": 0.6,
-      "champ_pct": 0.2
+      "playoffs_pct": 24.8,
+      "top6_pct": 0.0,
+      "playin_pct": 100.0,
+      "win_r1_pct": 5.2,
+      "win_r2_pct": 2.2,
+      "finals_pct": 0.5,
+      "champ_pct": 0.1
     },
     {
       "team": "MEM",
