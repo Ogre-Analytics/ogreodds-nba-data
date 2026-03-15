@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T23:36:53Z",
+  "generated_at": "2026-03-14T23:58:25Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -33,8 +33,8 @@
       "away_abbrev": "WAS",
       "home_win_pct": 96,
       "away_win_pct": 4,
-      "tip_time_et": "3rd Qtr",
-      "tip_time_aedt": "3rd Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
