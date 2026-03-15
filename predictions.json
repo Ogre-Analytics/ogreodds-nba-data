@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T22:54:20Z",
+  "generated_at": "2026-03-15T23:26:34Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -57,8 +57,8 @@
       "away_abbrev": "POR",
       "home_win_pct": 34,
       "away_win_pct": 66,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
