@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T19:25:59Z",
+  "generated_at": "2026-03-15T19:49:20Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -9,9 +9,9 @@
       "away_abbrev": "MIN",
       "home_win_pct": 73,
       "away_win_pct": 27,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -21,9 +21,9 @@
       "away_abbrev": "DAL",
       "home_win_pct": 87,
       "away_win_pct": 13,
-      "tip_time_et": "3:30 pm ET",
-      "tip_time_aedt": "6:30 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "1st Qtr",
+      "tip_time_aedt": "1st Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -33,9 +33,9 @@
       "away_abbrev": "DET",
       "home_win_pct": 56,
       "away_win_pct": 44,
-      "tip_time_et": "3:30 pm ET",
-      "tip_time_aedt": "6:30 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "1st Qtr",
+      "tip_time_aedt": "1st Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -45,9 +45,9 @@
       "away_abbrev": "IND",
       "home_win_pct": 77,
       "away_win_pct": 23,
-      "tip_time_et": "3:30 pm ET",
-      "tip_time_aedt": "6:30 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "1st Qtr",
+      "tip_time_aedt": "1st Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
