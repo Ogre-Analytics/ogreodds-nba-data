@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T18:54:08Z",
+  "generated_at": "2026-03-15T19:25:59Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -19,8 +19,8 @@
       "away_team": "Dallas Mavericks",
       "home_abbrev": "CLE",
       "away_abbrev": "DAL",
-      "home_win_pct": 90,
-      "away_win_pct": 10,
+      "home_win_pct": 87,
+      "away_win_pct": 13,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
