@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T23:58:25Z",
+  "generated_at": "2026-03-15T02:47:40Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -33,9 +33,9 @@
       "away_abbrev": "WAS",
       "home_win_pct": 96,
       "away_win_pct": 4,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -45,9 +45,9 @@
       "away_abbrev": "ORL",
       "home_win_pct": 84,
       "away_win_pct": 16,
-      "tip_time_et": "8:00 pm ET",
-      "tip_time_aedt": "11:00 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -69,9 +69,9 @@
       "away_abbrev": "DEN",
       "home_win_pct": 70,
       "away_win_pct": 30,
-      "tip_time_et": "8:30 pm ET",
-      "tip_time_aedt": "11:30 am AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
+      "game_status": "live",
       "injury_adjusted": true
     },
     {
@@ -81,9 +81,9 @@
       "away_abbrev": "SAC",
       "home_win_pct": 91,
       "away_win_pct": 9,
-      "tip_time_et": "10:30 pm ET",
-      "tip_time_aedt": "1:30 pm AEDT",
-      "game_status": "scheduled",
+      "tip_time_et": "Tipoff",
+      "tip_time_aedt": "Tipoff",
+      "game_status": "live",
       "injury_adjusted": true
     }
   ]
