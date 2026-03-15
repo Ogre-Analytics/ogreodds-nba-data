@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T23:26:34Z",
+  "generated_at": "2026-03-15T23:52:41Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -43,8 +43,8 @@
       "away_team": "Indiana Pacers",
       "home_abbrev": "MIL",
       "away_abbrev": "IND",
-      "home_win_pct": 77,
-      "away_win_pct": 23,
+      "home_win_pct": 70,
+      "away_win_pct": 30,
       "tip_time_et": "Final",
       "tip_time_aedt": "Final",
       "game_status": "final",
@@ -57,8 +57,8 @@
       "away_abbrev": "POR",
       "home_win_pct": 34,
       "away_win_pct": 66,
-      "tip_time_et": "3rd Qtr",
-      "tip_time_aedt": "3rd Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
