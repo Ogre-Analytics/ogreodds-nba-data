@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T02:47:40Z",
+  "generated_at": "2026-03-15T05:02:59Z",
   "game_date": "2026-03-14",
   "games": [
     {
@@ -27,6 +27,18 @@
       "injury_adjusted": false
     },
     {
+      "home_team": "San Antonio Spurs",
+      "away_team": "Charlotte Hornets",
+      "home_abbrev": "SAS",
+      "away_abbrev": "CHA",
+      "home_win_pct": 66,
+      "away_win_pct": 34,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
+      "injury_adjusted": true
+    },
+    {
       "home_team": "Boston Celtics",
       "away_team": "Washington Wizards",
       "home_abbrev": "BOS",
@@ -51,27 +63,15 @@
       "injury_adjusted": true
     },
     {
-      "home_team": "San Antonio Spurs",
-      "away_team": "Charlotte Hornets",
-      "home_abbrev": "SAS",
-      "away_abbrev": "CHA",
-      "home_win_pct": 66,
-      "away_win_pct": 34,
-      "tip_time_et": "Final",
-      "tip_time_aedt": "Final",
-      "game_status": "final",
-      "injury_adjusted": true
-    },
-    {
       "home_team": "Los Angeles Lakers",
       "away_team": "Denver Nuggets",
       "home_abbrev": "LAL",
       "away_abbrev": "DEN",
-      "home_win_pct": 70,
-      "away_win_pct": 30,
-      "tip_time_et": "4th Qtr",
-      "tip_time_aedt": "4th Qtr",
-      "game_status": "live",
+      "home_win_pct": 69,
+      "away_win_pct": 31,
+      "tip_time_et": "Final",
+      "tip_time_aedt": "Final",
+      "game_status": "final",
       "injury_adjusted": true
     },
     {
@@ -81,8 +81,8 @@
       "away_abbrev": "SAC",
       "home_win_pct": 91,
       "away_win_pct": 9,
-      "tip_time_et": "Tipoff",
-      "tip_time_aedt": "Tipoff",
+      "tip_time_et": "3rd Qtr",
+      "tip_time_aedt": "3rd Qtr",
       "game_status": "live",
       "injury_adjusted": true
     }
