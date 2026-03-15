@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T18:00:20Z",
+  "generated_at": "2026-03-15T18:54:08Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -9,8 +9,8 @@
       "away_abbrev": "MIN",
       "home_win_pct": 73,
       "away_win_pct": 27,
-      "tip_time_et": "2nd Qtr",
-      "tip_time_aedt": "2nd Qtr",
+      "tip_time_et": "4th Qtr",
+      "tip_time_aedt": "4th Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -19,8 +19,8 @@
       "away_team": "Dallas Mavericks",
       "home_abbrev": "CLE",
       "away_abbrev": "DAL",
-      "home_win_pct": 87,
-      "away_win_pct": 13,
+      "home_win_pct": 90,
+      "away_win_pct": 10,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
@@ -43,8 +43,8 @@
       "away_team": "Indiana Pacers",
       "home_abbrev": "MIL",
       "away_abbrev": "IND",
-      "home_win_pct": 70,
-      "away_win_pct": 30,
+      "home_win_pct": 77,
+      "away_win_pct": 23,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
