@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T17:31:59Z",
+  "generated_at": "2026-03-15T18:00:20Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -9,8 +9,8 @@
       "away_abbrev": "MIN",
       "home_win_pct": 73,
       "away_win_pct": 27,
-      "tip_time_et": "1st Qtr",
-      "tip_time_aedt": "1st Qtr",
+      "tip_time_et": "2nd Qtr",
+      "tip_time_aedt": "2nd Qtr",
       "game_status": "live",
       "injury_adjusted": true
     },
@@ -43,8 +43,8 @@
       "away_team": "Indiana Pacers",
       "home_abbrev": "MIL",
       "away_abbrev": "IND",
-      "home_win_pct": 71,
-      "away_win_pct": 29,
+      "home_win_pct": 70,
+      "away_win_pct": 30,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
