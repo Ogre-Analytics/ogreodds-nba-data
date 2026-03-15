@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T15:52:18Z",
+  "generated_at": "2026-03-15T16:28:16Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -7,8 +7,8 @@
       "away_team": "Minnesota Timberwolves",
       "home_abbrev": "OKC",
       "away_abbrev": "MIN",
-      "home_win_pct": 69,
-      "away_win_pct": 31,
+      "home_win_pct": 73,
+      "away_win_pct": 27,
       "tip_time_et": "1:00 pm ET",
       "tip_time_aedt": "4:00 am AEDT",
       "game_status": "scheduled",
