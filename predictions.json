@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T13:36:34Z",
+  "generated_at": "2026-03-15T14:16:45Z",
   "game_date": "2026-03-15",
   "games": [
     {
@@ -31,8 +31,8 @@
       "away_team": "Detroit Pistons",
       "home_abbrev": "TOR",
       "away_abbrev": "DET",
-      "home_win_pct": 61,
-      "away_win_pct": 39,
+      "home_win_pct": 56,
+      "away_win_pct": 44,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
@@ -43,8 +43,8 @@
       "away_team": "Indiana Pacers",
       "home_abbrev": "MIL",
       "away_abbrev": "IND",
-      "home_win_pct": 78,
-      "away_win_pct": 22,
+      "home_win_pct": 71,
+      "away_win_pct": 29,
       "tip_time_et": "3:30 pm ET",
       "tip_time_aedt": "6:30 am AEDT",
       "game_status": "scheduled",
